@@ -1,2 +1,1 @@
-fp-in-scala
-===========
+# fp-in-scala
