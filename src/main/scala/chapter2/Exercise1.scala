@@ -21,10 +21,8 @@ object Exercise1 {
     @tailrec
     def go(n: Int, acc: List[Int]): Int =
       if ((acc.size - 1) == position) {
-        // println(s"acc = ${acc}, position = ${position}, n = ${n}")
         return acc(position - 1)
       } else {
-        // println(s"position = ${position}, n = ${n}, acc = ${acc.toList}")
         go(n + 1, acc :+ (acc(n - 1) + acc(n - 2)))
       }
 
